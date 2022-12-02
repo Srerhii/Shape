@@ -1,15 +1,24 @@
-public class Polygon extends Shape{
-    public int per;
-    public int sidP_1;
+public class Polygon extends Shape {
+    public int perimeter;
+    public int amountSide;
+    public int sidePolygon_1;
 
 
-    public Polygon(int sidP_1) {
-        this.sidP_1 = sidP_1;
+    public Polygon(int amountSide, int sidePolygon_1) {
+        this.amountSide = amountSide;
+        this.sidePolygon_1 = sidePolygon_1;
 
     }
 
     @Override
+    public String ShapeName() {
+
+        String name = "Perimeter polygon =";
+        return name;
+    }
+
+    @Override
     public int Perimeter() {
-    return per=sidP_1*5;
+        return perimeter = sidePolygon_1 * amountSide;
     }
 }

@@ -1,7 +1,7 @@
 public abstract class Shape {
-   public int per;
+    public int perimeter;
 
-public abstract int Perimeter();
+    public abstract int Perimeter();
 
-
+    public abstract String ShapeName();
 }

@@ -1,15 +1,22 @@
 public class Square extends Shape {
-    public int per;
-    public int sidS_1;
+    public int perimeter;
+    public int sideSquare_1;
 
 
-    public Square(int sidS_1) {
-        this.sidS_1 = sidS_1;
+    @Override
+    public String ShapeName() {
+
+        String name = "Perimeter square =";
+        return name;
+    }
+
+    public Square(int sideSquare_1) {
+        this.sideSquare_1 = sideSquare_1;
 
     }
 
     @Override
     public int Perimeter() {
-    return per=sidS_1*4;
+        return perimeter = sideSquare_1 * 4;
     }
 }
